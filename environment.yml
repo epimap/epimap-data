@@ -1,0 +1,13 @@
+name: epimap-data
+dependencies:
+  - pandas
+  - numpy
+  - lxml
+  - requests
+  - xlrd
+  - openpyxl
+  - matplotlib
+  - pip
+  - pip:
+    - geopy
+    - git+git://github.com/epimap/covid19_datasets.git@master
