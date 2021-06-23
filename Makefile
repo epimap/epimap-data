@@ -1,6 +1,10 @@
 SHELL=/bin/bash
-CONDAROOT=/data/ziz/mhutchin/miniconda3
+CONDAROOT=/USER_SUPPLIED_DIRECTORY/miniconda3
 PYENV=env
+
+install:
+	source $(CONDAROOT)/bin/activate && conda env create -f environment.yml
+	# source $(CONDAROOT)/bin/activate && conda activate epimap-data && pip install git+git://github.com/epimap/covid19_datasets.git@master
 
 preprocess-data:
 	source $(CONDAROOT)/bin/activate && conda activate Rmap && pip install git+git://github.com/rs-delve/covid19_datasets.git@master
