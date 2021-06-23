@@ -1,8 +1,0 @@
-pandas
-numpy
-lxml
-requests
-xlrd
-openpyxl
-geopy
-git+git://github.com/rs-delve/covid19_datasets.git@master
