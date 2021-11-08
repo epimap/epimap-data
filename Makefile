@@ -1,5 +1,4 @@
 SHELL=/bin/bash
-CONDAROOT=/USER_SUPPLIED_DIRECTORY/miniconda3
 
 install:
 	virtualenv -p python3.8 venv

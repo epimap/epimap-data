@@ -4,8 +4,6 @@ Data preprocessing code to pull together data about the UK to use in epimap mode
 
 ### Set up
 
-First update the path to your conda installation in line 2 of the [Makefile](Makefile) and run:
-
 ```{bash}
 make install
 ```
