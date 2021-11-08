@@ -55,4 +55,3 @@ if __name__ == "__main__":
     traffic_T_prop.to_csv(os.path.join(args.output_dir, "traffic_flux_transpose_row-normed.csv"))
     # %%
     # Unnormalized version
-

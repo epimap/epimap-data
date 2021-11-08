@@ -82,8 +82,10 @@ if __name__ == "__main__":
     areas = pd.read_csv(_AREAS)
     nhs_scot = pd.read_csv(_SCOTLAND_NHS_REGIONS)
 
+    names = areas.area.values
+    traffic = pd.DataFrame(0.0, index = names, columns = names)
     print(traffic)
-
+    
     NN = len(traffic.index) * len(traffic.columns)
     k = 0
     for i, region_from in enumerate(traffic.index):
@@ -107,4 +109,4 @@ if __name__ == "__main__":
             if k % 1000 == 0:
                 print(f"Done {k}/{NN} entries.")
 
-    traffic.to_csv(os.path.join(args.output_dir, "uk_traffic.csv"))
+    traffic.to_csv(os.path.join(args.output_dir, "uk_traffic.csv"), index_label='area')
