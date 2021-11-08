@@ -3,7 +3,7 @@ CONDAROOT=/USER_SUPPLIED_DIRECTORY/miniconda3
 
 install:
 	virtualenv -p python3.8 venv
-	source venv/bin/activate && pip install -r requirments.txt
+	source venv/bin/activate && pip install -r requirements.txt
 
 preprocess-data:
 	source venv/bin/activate && python process_uk_cases.py
