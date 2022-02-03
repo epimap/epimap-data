@@ -1,7 +1,7 @@
 beautifulsoup4==4.9.3
 certifi==2021.5.30
 chardet==4.0.0
--e git+git@github.com:rs-delve/covid19_datasets.git@c1d3ed827086dc871fb7705ff40090dd3101056d#egg=covid19_datasets
+-e git+git@github.com:torfjelde/covid19_datasets.git@265b72cfeb4288ec382cd8208e48fc34038ac97c#egg=covid19_datasets
 cycler==0.10.0
 distro==1.5.0
 et-xmlfile==1.1.0
