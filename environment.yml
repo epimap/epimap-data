@@ -10,4 +10,4 @@ dependencies:
   - pip
   - pip:
     - geopy
-    - git+git://github.com/epimap/covid19_datasets.git@master
+    - git+git://github.com/torfjelde/covid19_datasets.git@tor/fix
