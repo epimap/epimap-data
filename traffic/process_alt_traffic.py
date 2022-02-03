@@ -15,6 +15,10 @@ if __name__ == "__main__":
     traffic = pd.read_csv(_TRAFFIC, index_col=0)
     areas = pd.read_csv(_AREAS, index_col=0)
 
+    common_indices = sorted(list(set(areas.index).intersection(set(traffic.index))))
+    areas = areas.loc[common_indices]
+    traffic = traffic.loc[common_indices]
+
     assert (np.diag(traffic) > 0).all()
     assert (traffic.sum(axis=1) > 0).all()
 

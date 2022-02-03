@@ -2,15 +2,15 @@ import os
 import argparse
 import numpy as np
 import pandas as pd
-from covid19_datasets import UKCovid19Data
+from covid19_datasets import UKCovid19DataV2
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", default="processed_data/")
     args = parser.parse_args()
 
-    uk_data = UKCovid19Data(
-        england_area_type=UKCovid19Data.ENGLAND_LOWER_TIER_AUTHORITY
+    uk_data = UKCovid19DataV2(
+        area_type=UKCovid19DataV2.LOWER_TIER_AUTHORITY
     )
     uk_cases = uk_data.get_cases_data()
 

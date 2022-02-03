@@ -50,6 +50,7 @@ def region2code(region):
     if len(codes) == 1:
         return codes.item()
     else:
+        print(f"{region} and {codes} and {region}")
         assert region == "Highland"  # should only happen for this?
         return list(codes)[0]
 

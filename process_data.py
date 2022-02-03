@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     nhs_regions = metadata["NHS_Region"]
     nhs_regions_unique = nhs_regions.unique()
-    nhs_regions_to_areas = np.zeros((N, 9))
+    nhs_regions_to_areas = np.zeros((N, 10))
 
     for i in range(N):
         area = areas[i]
